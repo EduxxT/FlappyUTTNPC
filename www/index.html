@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Lilita+One&family=Micro+5&family=Montserrat:wght@400;700&family=Noto+Sans+Tangsa:wght@500&family=Roboto&family=Vina+Sans&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=landscape">
+    <link rel="icon" type="image/png" href="/img/favicon.ico"/>
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="/img/BRINCO-removebg-preview.png" alt="bird-img" class="bird" id="bird-1">
+    <div class="message">
+       <p> Toca la pantalla <br> para jugar </p>
+    </div>
+    <div class="scores">
+        <span class="score_title"></span>
+        <span class="score_val"></span>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Game Over! Enter Your Name</h2>
+          <form id="nameForm">
+            <input type="text" id="usernameInput" placeholder="Enter your name" required>
+            <button type="submit">Submit</button>
+          </form>
+          <button id="viewScoresBtn">View Scores</button>
+          <button id="playAgainBtnModal">Play Again</button> 
+         <div id="scoresContainer"></div>
+        </div>
+      </div>
+</body>
+</html>
